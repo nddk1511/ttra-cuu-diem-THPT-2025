@@ -3,155 +3,177 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Tra cứu điểm thi</title>
+  <title>Tra cứu điểm thi 2025</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-    .header {
-      background-color: #0077c2;
-      color: yellow;
-      text-align: center;
-      padding-top: 10px;
-    }
-    .header h2 {
-      font-size: 24px;
       margin: 0;
-      font-weight: bold;
+      background-color: #f9f9f9;
     }
-    .header h1 {
-      font-size: 28px;
-      margin: 5px 0 10px;
-      color: red;
-    }
-    .content-wrapper {
-      background-color: #ddd;
-      padding: 30px 0;
-      min-height: calc(100vh - 120px);
-    }
-    .content {
-      background-color: white;
-      max-width: 700px;
-      margin: auto;
-      padding: 30px 20px;
-      border-radius: 5px;
+
+    .header {
+      background-color: #2c57a7;
+      padding: 25px 10px;
       text-align: center;
+    }
+
+    .header h1 {
+      color: yellow;
+      font-size: 30px;
+      font-family: 'Arial Black', sans-serif;
+      font-weight: bolder;
+      transform: scaleX(1.15);
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .title-green {
-      color: #0077c2;
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
 
-    .form-grid {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      align-items: center;
-      gap: 10px;
-      margin: 15px 0;
-    }
-
-    input[type="text"] {
-      padding: 8px 12px;
-      font-size: 16px;
-      width: 100%;
-      border: 1px solid #aaa;
-      border-radius: 3px;
-    }
-
-    .captcha-row {
-      display: grid;
-      grid-template-columns: 150px 1fr auto auto;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .captcha-img {
-      background-color: #ccc;
-      padding: 8px 16px;
-      font-weight: bold;
-      font-size: 18px;
-      min-width: 70px;
+    h2 {
+      color: red;
       text-align: center;
+      font-size: 22px;
     }
 
-    button, .refresh-btn {
-      padding: 8px 16px;
-      background-color: #0077c2;
+    h3 {
+      color: #2c57a7;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      width: 120px;
+    }
+
+    .form-group input[type="text"] {
+      flex: 1;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .captcha-box {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .captcha {
+      background-color: #eee;
+      padding: 8px 15px;
+      font-weight: bold;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+
+    .refresh {
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .button {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    button {
+      padding: 8px 20px;
+      font-size: 16px;
+      background-color: #2c57a7;
       color: white;
       border: none;
-      font-weight: bold;
       cursor: pointer;
-      border-radius: 3px;
     }
 
     .result {
-      margin-top: 30px;
-      font-size: 18px;
-      font-weight: bold;
+      margin-top: 20px;
     }
-    .score-row {
-      margin-top: 10px;
-      font-size: 18px;
+
+    .scores {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 5px;
+    }
+
+    .scores div {
+      min-width: 100px;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <h2>SỞ GIÁO DỤC VÀ ĐÀO TẠO THÀNH PHỐ ĐÀ NẴNG</h2>
-    <h1>TRANG TRA CỨU KẾT QUẢ THI TỐT NGHIỆP THPT NĂM 2025</h1>
+    <h1>TRANG TRA CỨU ĐIỂM THI TỐT NGHIỆP THPT NĂM 2025</h1>
   </div>
-  <div class="content-wrapper">
-    <div class="content">
-      <div class="title-green">TRA CỨU KẾT QUẢ THI</div>
 
-      <div class="form-grid">
-        <label for="sbd">Số báo danh:</label>
-        <input type="text" id="sbd">
+  <div class="container">
+    <h3>SỞ GIÁO DỤC VÀ ĐÀO TẠO THÀNH PHỐ ĐÀ NẴNG</h3>
+    <h2>TRA CỨU ĐIỂM THI TỐT NGHIỆP THPT NĂM 2025</h2>
+    <h3>(bao gồm thí sinh ĐKDT tại TP. Đà Nẵng và tỉnh Quảng Nam cũ)</h3>
+
+    <div class="form-group">
+      <label for="sbd">Số báo danh</label>
+      <input type="text" id="sbd">
+    </div>
+
+    <div class="form-group">
+      <label for="captcha">Mã xác nhận</label>
+      <div class="captcha-box">
+        <input type="text" id="captcha" maxlength="6">
+        <div class="captcha">2xWTB</div>
+        <div class="refresh" onclick="alert('Mã xác nhận cố định là 2xWTB')">🔄</div>
       </div>
+    </div>
 
-      <div class="captcha-row">
-        <label for="captcha-input">Mã xác nhận:</label>
-        <input type="text" id="captcha-input">
-        <div class="captcha-img" id="captcha">X7P9</div>
-        <div class="refresh-btn" onclick="refreshCaptcha()">🔄</div>
+    <div class="button">
+      <button onclick="traCuu()">Tra cứu</button>
+    </div>
+
+    <div id="result" class="result hidden">
+      <div><strong>Họ và tên:</strong> Nguyễn Đình Đăng Khoa</div>
+      <div class="scores">
+        <div><strong>Toán:</strong> 6,35</div>
+        <div><strong>Ngữ văn:</strong> 5</div>
+        <div><strong>Vật lí:</strong> 8,5</div>
+        <div><strong>Hóa học:</strong> 8,5</div>
       </div>
-
-      <div style="margin-top: 20px;">
-        <button onclick="traCuu()">Tra cứu</button>
-      </div>
-
-      <div class="result" id="result"></div>
+      <div class="note">Ghi chú: Dấu (*) thể hiện điểm thi sau phúc khảo</div>
     </div>
   </div>
 
   <script>
-    function refreshCaptcha() {
-      const random = Math.random().toString(36).substring(2, 6).toUpperCase();
-      document.getElementById('captcha').textContent = random;
-    }
-
     function traCuu() {
       const sbd = document.getElementById('sbd').value.trim();
-      const captcha = document.getElementById('captcha-input').value.trim();
-      const realCaptcha = document.getElementById('captcha').textContent.trim();
+      const captcha = document.getElementById('captcha').value.trim();
       const resultDiv = document.getElementById('result');
 
-      if (sbd === '34001564' && captcha === realCaptcha) {
-        resultDiv.innerHTML = `
-          <div>Họ và tên: Nguyễn Đình Đăng Khoa</div>
-          <div class="score-row">Toán: 6,35 | Văn: 5 | Lý: 8,5 | Hóa: 8,5</div>
-        `;
+      if (sbd === '34001564' && captcha === '2xWTB') {
+        resultDiv.classList.remove('hidden');
       } else {
-        resultDiv.innerHTML = "<div style='color:red;'>Số báo danh hoặc mã xác nhận không đúng!</div>";
+        alert("Số báo danh hoặc mã xác nhận không đúng!");
+        resultDiv.classList.add('hidden');
       }
     }
   </script>
 </body>
 </html>
-
-   
